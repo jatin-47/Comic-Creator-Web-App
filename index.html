@@ -3,22 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Comic Creator</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <h1 id="heading">Comic Creator</h1>
-
-    <div id="strip">
-    </div>
-    <!-- <img src="IMG_20201216_125336.jpg" width="350" height="350" alt=""> -->
-
+    <p class="content">There are 10 panels for you to generate a comic using a text input. <br> You can download the final comic strip by previewing it and then clicking the download button.</p>
+    <div id="strip"></div>
     <div id="canvas-cont">
         <button type="button" id="preview" onclick="generate_preview()" class="btn btn-primary">Preview Comic</button>
-        <div id="final">
-
-        </div>
+        <div id="final"></div>
     </div>
 
     <button type="button" id="download" class="btn btn-success" onclick="download()">Download</button>

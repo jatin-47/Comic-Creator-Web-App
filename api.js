@@ -136,5 +136,9 @@ function generate_preview() {
 			var y = parseInt(i/5)*ht;
 			ctx.drawImage(images[i], x, y, wd, ht);
 		}
+		document.getElementById("download").style.display = "block";
+	}
+	else{
+		document.getElementById("download").style.display = "none";
 	}
 }
